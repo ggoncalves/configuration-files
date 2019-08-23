@@ -1,0 +1,25 @@
+[user]
+	name = Glaucio Goncalves
+	email = glaucio.c.goncalves@gmail.com
+[core]
+	longpaths = true
+	excludesfile = /Users/ggoncalves/.gitignore_global
+[diff]
+	external = /Users/ggoncalves/bin/diff-git.sh
+	tool = diffmerge
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+[difftool "sourcetree"]
+	cmd = /Applications/DiffMerge.app/Contents/MacOS/DiffMerge --nosplash \"$LOCAL\" \"$REMOTE\"
+	path = 
+[merge]
+	tool = diffmerge
+[mergetool "sourcetree"]
+	cmd = /Applications/DiffMerge.app/Contents/MacOS/DiffMerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
+	trustExitCode = true
+[credential]
+	helper = osxkeychain
+[commit]
+	template = /Users/ggoncalves/.stCommitMsg

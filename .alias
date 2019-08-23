@@ -1,0 +1,26 @@
+# .alias file.
+#
+# Gláucio Gonçalves
+#
+
+# intercepted commands
+alias ls='ls -GFh'
+alias vi='vim'
+
+# reduced commands
+alias md='mkdir'
+alias valias='vim ~/.alias'
+alias realias='source ~/.alias'
+alias pd='pushd'
+alias po='popd'
+alias java_home='/usr/libexec/java_home'
+
+# find commands
+alias findsvn='find . -not \( -name .svn -prune \) -type f -print'
+alias ff='find . -not \( -name .svn -prune \) -type f -name'
+alias godev='cd ~/Dropbox/Development/'
+alias goback='cd /Users/ggoncalves/Projects/DrFaz/backend-dev'
+
+# ssh
+alias sshkap='ssh raspberry-kapanen.noip.me -lggoncalves'
+alias sshback='ssh backend.brazilsouth.cloudapp.azure.com -ldrfaz'
